@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            width: 800px;
+            background-color: lightgrey;
+            margin: 40px auto;
+            display: grid;
+            grid-template-rows: 150px 150px;
+            grid-template-columns: 150px 1fr 1fr;
+            /* 
+            1fr works simlarly with auto
+            grid-row-gap: 30px;
+            grid-column-gap: 50px; */
+            grid-gap: 30px;
+        }
+        .itme{
+
+            padding: 30px;
+            font-size: 30px;
+            color: white;
+
+        }
+        .item-1{
+            background-color: orangered;
+        }
+        .item-2{
+            background-color: olivedrab;
+        }
+        .item-3{
+            background-color: royalblue;
+        }
+        .item-4{
+            background-color: palevioletred;
+        }
+        .item-5{
+            background-color: goldenrod;
+        }
+        .item-6{
+            background-color: blueviolet;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="itme item-1">item1</div>
+        <div class="itme item-2">item2</div>
+        <div class="itme item-3">item3</div>
+        <div class="itme item-4">item4</div>
+        <div class="itme item-5">item5</div>
+        <div class="itme item-6">item6</div>
+
+     
+    </div>
+    
+</body>
+</html>
